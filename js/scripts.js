@@ -1,21 +1,10 @@
 $(document).ready(function() {
-  $("#form").submit(function(event) {
+  $(".btn").click(function(event) {
     event.preventDefault();
-    var name = $("#name").val();
-    var choice = ["flavors", "scoops", "bowls"];
-    var order = [];
-
-    choices.forEach(function(choice) {
-      var userInput = $("select#"+choice).val();
-      $("." + choice).text(userInput);
-      
+    var flavors = ["mint", "cookie-dough", "vanilla"];flavors.forEach(function(flavor) {
+      $("#flavors").append("<li" + flavor + "</li>") 
     });
-
-    yourOrder.forEach(function(item) {
-      $("#order").append("<li>"+item+"</li>");
-    })
-  
-    $(".name").text(name);
-    $("#order").show();
-  });
+    $("#favorites").show();
+    
+  });  
 });
