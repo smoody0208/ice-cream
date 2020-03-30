@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Favorite Ice Cream</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Pick Your Ice Cream Flavor!</h1>
+    </div>  
+      <form id="form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+          <label>Choose your flavor</label>
+          <select id="flavors" class="form-control">
+            <option value="fig">Fig and Fresh Brown Turkey"</option>
+            <option value="pepper">Ghost Pepper</option>
+            <option value="cheese">Blue Cheese</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>How many scoops?</label>
+          <select id="scoops" class="form-control"></select>
+            <radio value="single">Single Scoop</radio>
+            <radio value="double">Double Scoop</radio>
+        </div>
+
+    </form>
+  </div>
+  
+</body>
+</html>
